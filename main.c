@@ -167,8 +167,6 @@ char **args, **env;
 
     _Ladd_js(s, ja);
 
-    lua_getfield(s, -1, "HOME");
-
     puts(lua_tostring(s, -1));
 
     lua_close(s);
